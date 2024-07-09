@@ -1,4 +1,4 @@
-##Issue in this repo.
+## Issue in this repo.
 
 Event Priority: The color display on the calendar based on event priority is not functioning correctly. This issue arises because I couldn't configure the color compatibility according to the FullCalendar plugin's requirements.
 
