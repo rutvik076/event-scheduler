@@ -1,0 +1,149 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Backup-E\\aspnetcore\\EventScheduler\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{465A82FB-397B-4943-AD8E-0AF1571A0D36}|EventScheduler\\EventScheduler.csproj|d:\\backup-e\\aspnetcore\\eventscheduler\\eventscheduler\\controllers\\eventscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{465A82FB-397B-4943-AD8E-0AF1571A0D36}|EventScheduler\\EventScheduler.csproj|solutionrelative:eventscheduler\\controllers\\eventscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{465A82FB-397B-4943-AD8E-0AF1571A0D36}|EventScheduler\\EventScheduler.csproj|d:\\backup-e\\aspnetcore\\eventscheduler\\eventscheduler\\services\\eventservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{465A82FB-397B-4943-AD8E-0AF1571A0D36}|EventScheduler\\EventScheduler.csproj|solutionrelative:eventscheduler\\services\\eventservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{465A82FB-397B-4943-AD8E-0AF1571A0D36}|EventScheduler\\EventScheduler.csproj|d:\\backup-e\\aspnetcore\\eventscheduler\\eventscheduler\\repositories\\eventrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{465A82FB-397B-4943-AD8E-0AF1571A0D36}|EventScheduler\\EventScheduler.csproj|solutionrelative:eventscheduler\\repositories\\eventrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{465A82FB-397B-4943-AD8E-0AF1571A0D36}|EventScheduler\\EventScheduler.csproj|d:\\backup-e\\aspnetcore\\eventscheduler\\eventscheduler\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{465A82FB-397B-4943-AD8E-0AF1571A0D36}|EventScheduler\\EventScheduler.csproj|solutionrelative:eventscheduler\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{465A82FB-397B-4943-AD8E-0AF1571A0D36}|EventScheduler\\EventScheduler.csproj|d:\\backup-e\\aspnetcore\\eventscheduler\\eventscheduler\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{465A82FB-397B-4943-AD8E-0AF1571A0D36}|EventScheduler\\EventScheduler.csproj|solutionrelative:eventscheduler\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{465A82FB-397B-4943-AD8E-0AF1571A0D36}|EventScheduler\\EventScheduler.csproj|d:\\backup-e\\aspnetcore\\eventscheduler\\eventscheduler\\repositories\\ieventrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{465A82FB-397B-4943-AD8E-0AF1571A0D36}|EventScheduler\\EventScheduler.csproj|solutionrelative:eventscheduler\\repositories\\ieventrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{465A82FB-397B-4943-AD8E-0AF1571A0D36}|EventScheduler\\EventScheduler.csproj|d:\\backup-e\\aspnetcore\\eventscheduler\\eventscheduler\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{465A82FB-397B-4943-AD8E-0AF1571A0D36}|EventScheduler\\EventScheduler.csproj|solutionrelative:eventscheduler\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{465A82FB-397B-4943-AD8E-0AF1571A0D36}|EventScheduler\\EventScheduler.csproj|d:\\backup-e\\aspnetcore\\eventscheduler\\eventscheduler\\views\\events\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{465A82FB-397B-4943-AD8E-0AF1571A0D36}|EventScheduler\\EventScheduler.csproj|solutionrelative:eventscheduler\\views\\events\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "EventRepository.cs",
+              "DocumentMoniker": "D:\\Backup-E\\aspnetcore\\EventScheduler\\EventScheduler\\Repositories\\EventRepository.cs",
+              "RelativeDocumentMoniker": "EventScheduler\\Repositories\\EventRepository.cs",
+              "ToolTip": "D:\\Backup-E\\aspnetcore\\EventScheduler\\EventScheduler\\Repositories\\EventRepository.cs",
+              "RelativeToolTip": "EventScheduler\\Repositories\\EventRepository.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-09T13:06:19.189Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "EventService.cs",
+              "DocumentMoniker": "D:\\Backup-E\\aspnetcore\\EventScheduler\\EventScheduler\\Services\\EventService.cs",
+              "RelativeDocumentMoniker": "EventScheduler\\Services\\EventService.cs",
+              "ToolTip": "D:\\Backup-E\\aspnetcore\\EventScheduler\\EventScheduler\\Services\\EventService.cs",
+              "RelativeToolTip": "EventScheduler\\Services\\EventService.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAuwA8AAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-09T10:19:10.96Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "EventsController.cs",
+              "DocumentMoniker": "D:\\Backup-E\\aspnetcore\\EventScheduler\\EventScheduler\\Controllers\\EventsController.cs",
+              "RelativeDocumentMoniker": "EventScheduler\\Controllers\\EventsController.cs",
+              "ToolTip": "D:\\Backup-E\\aspnetcore\\EventScheduler\\EventScheduler\\Controllers\\EventsController.cs",
+              "RelativeToolTip": "EventScheduler\\Controllers\\EventsController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-09T07:37:42.646Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Backup-E\\aspnetcore\\EventScheduler\\EventScheduler\\Views\\Events\\Index.cshtml",
+              "RelativeDocumentMoniker": "EventScheduler\\Views\\Events\\Index.cshtml",
+              "ToolTip": "D:\\Backup-E\\aspnetcore\\EventScheduler\\EventScheduler\\Views\\Events\\Index.cshtml",
+              "RelativeToolTip": "EventScheduler\\Views\\Events\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADAAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-09T07:26:22.729Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IEventRepository.cs",
+              "DocumentMoniker": "D:\\Backup-E\\aspnetcore\\EventScheduler\\EventScheduler\\Repositories\\IEventRepository.cs",
+              "RelativeDocumentMoniker": "EventScheduler\\Repositories\\IEventRepository.cs",
+              "ToolTip": "D:\\Backup-E\\aspnetcore\\EventScheduler\\EventScheduler\\Repositories\\IEventRepository.cs",
+              "RelativeToolTip": "EventScheduler\\Repositories\\IEventRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-09T07:04:41.891Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Backup-E\\aspnetcore\\EventScheduler\\EventScheduler\\appsettings.json",
+              "RelativeDocumentMoniker": "EventScheduler\\appsettings.json",
+              "ToolTip": "D:\\Backup-E\\aspnetcore\\EventScheduler\\EventScheduler\\appsettings.json",
+              "RelativeToolTip": "EventScheduler\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAABGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-07-09T06:59:35.346Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "D:\\Backup-E\\aspnetcore\\EventScheduler\\EventScheduler\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "EventScheduler\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "D:\\Backup-E\\aspnetcore\\EventScheduler\\EventScheduler\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "EventScheduler\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-09T06:52:34.597Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Backup-E\\aspnetcore\\EventScheduler\\EventScheduler\\Program.cs",
+              "RelativeDocumentMoniker": "EventScheduler\\Program.cs",
+              "ToolTip": "D:\\Backup-E\\aspnetcore\\EventScheduler\\EventScheduler\\Program.cs",
+              "RelativeToolTip": "EventScheduler\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-09T06:49:54.205Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

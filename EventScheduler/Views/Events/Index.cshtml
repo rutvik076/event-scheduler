@@ -1,0 +1,161 @@
+﻿@{
+    ViewData["Title"] = "Events";
+}
+
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" />
+<link href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.0.1/fullcalendar.min.css" rel="stylesheet" />
+
+<div class="container">
+    <h1>@ViewData["Title"]</h1>
+    <p>Welcome to the Events page!</p>
+
+    <button id="addEventButton" class="btn btn-primary mb-3">Add Event</button>
+    <form id="eventForm" style="display: none;">
+        <div class="form-group">
+            <label for="eventTitle">Event Title</label>
+            <input type="text" class="form-control" id="eventTitle" name="eventTitle" required>
+        </div>
+        <div class="form-group">
+            <label for="eventStartDate">Event Start Date</label>
+            <input type="datetime-local" class="form-control" id="eventStartDate" name="eventStartDate" required>
+        </div>
+        <div class="form-group">
+            <label for="eventEndDate">Event End Date</label>
+            <input type="datetime-local" class="form-control" id="eventEndDate" name="eventEndDate" required>
+        </div>
+        <div class="form-group">
+            <label for="eventDescription">Event Description</label>
+            <textarea class="form-control" id="eventDescription" name="eventDescription" required></textarea>
+        </div>
+        <div class="form-group">
+            <label for="eventPriority">Event Priority</label>
+            <select class="form-control" id="eventPriority" name="eventPriority" required>
+                <option value="1">High</option>
+                <option value="2">Medium</option>
+                <option value="3">Low</option>
+            </select>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+    <div id="calendar"></div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.0.1/fullcalendar.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<script>
+    $(document).ready(function () {
+        $('#calendar').fullCalendar({
+            header: {
+                left: 'prev,next today',
+                center: 'title',
+                right: 'month,agendaWeek,agendaDay'
+            },
+            defaultDate: moment().format('YYYY-MM-DD'),
+            defaultView: 'month',
+            editable: true,
+            events: {
+                url: '/Events/GetEvents', // Endpoint to fetch events
+                failure: function () {
+                    alert('There was an error while fetching events!');
+                }
+            },
+            eventRender: function (event, element) {
+                console.log('Event priority:', event.priority); 
+                switch (event.priority) {
+                    case '1':
+                        element.addClass('event-high');
+                        break;
+                    case '2':
+                        element.addClass('event-medium');
+                        break;
+                    case '3':
+                        element.addClass('event-low');
+                        break;
+                    default:
+                        console.log('Unknown priority:', event.priority); 
+                        element.addClass('event-low'); 
+                        break;
+                }
+            },
+
+            eventDrop: function (event, delta, revertFunc) {
+                var updatedEventData = {
+                    id: event.id,
+                    eventTitle: event.title,
+                    eventStartDate: event.start.format(),
+                    eventEndDate: event.end ? event.end.format() : null,
+                    eventDescription: event.description,
+                    eventPriority: event.priority
+                };
+
+                $.ajax({
+                    url: '/Events/UpdateEvent/' + event.id,
+                    method: 'PUT',
+                    contentType: 'application/json',
+                    data: JSON.stringify(updatedEventData),
+                    success: function (data) {
+                        console.log('Event updated successfully:', data);
+                    },
+                    error: function (error) {
+                        console.error('Error updating event:', error);
+                        revertFunc(); // Revert the event if update fails
+                    }
+                });
+            }
+        });
+
+        $('#addEventButton').on('click', function () {
+            $('#eventForm').toggle();
+        });
+
+        $('#eventForm').submit(function (e) {
+            e.preventDefault();
+
+            var formData = {
+                eventTitle: $('#eventTitle').val(),
+                eventStartDate: $('#eventStartDate').val(),
+                eventEndDate: $('#eventEndDate').val(),
+                eventDescription: $('#eventDescription').val(),
+                eventPriority: $('#eventPriority').val()
+            };
+
+            $.ajax({
+                url: '/Events/CreateEvent',
+                method: 'POST',
+                contentType: 'application/json',
+                data: JSON.stringify(formData),
+                success: function (data) {
+                    $('#eventForm').hide().trigger('reset');
+                    $('#calendar').fullCalendar('refetchEvents'); 
+                },
+                error: function (error) {
+                    console.error('Error creating event:', error);
+                }
+            });
+        });
+
+    });
+</script>
+
+<style>
+    .event-high {
+        background-color: lightgreen;
+        border-color: green;
+        color: #fff;
+    }
+
+    .event-medium {
+        background-color: orange;
+        border-color: orange;
+        color: #fff;
+    }
+
+    .event-low {
+        background-color: deepskyblue;
+        border-color: blue;
+        color: #fff;
+    }
+</style>
